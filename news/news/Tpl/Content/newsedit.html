@@ -1,0 +1,71 @@
+﻿<html> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+
+ 
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<volist id="vo" name="xianshi" >
+
+<form action="{:U('News/editController')}" method="post" >
+
+
+
+
+<input type='hidden' name='id' value='{$vo.id}' />
+来源：
+
+<textarea id="source" name="source" cols=40 rows=1 style=overflow:hidden >{$vo.source}</textarea>
+<br><br>
+
+
+标题：
+
+<textarea id="title" name="title" cols=40 rows=1 style=overflow:hidden >{$vo.title}</textarea>
+
+<br><br>
+<textarea id="content" name="content" cols=50 rows=10 >{$vo.content}</textarea>
+
+<br><br>
+<input type="submit" class="button" value="修改" action='' />
+
+</form>
+
+
+</volist>
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+
+<a href="{:U('News/edit')} ">返回编辑 </a>
+
+
+</body>
+</html> 

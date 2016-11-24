@@ -1,0 +1,17 @@
+﻿删除文章<br/><br/>
+
+
+<volist name="list" id="vo">
+{$vo.id}&nbsp&nbsp&nbsp{$vo.title} &nbsp&nbsp 
+
+<form method='post' action='./deleteController'  >
+
+<input type='hidden' value='{$vo.id}' name='deId' />
+<br/>
+<input type='submit' value='删除'  />
+
+
+</form><br/>
+
+
+</volist>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+    
+	<table>
+	
+		<tr>
+		
+		<th>角色管理</th>
+	
+		<tr>
+		<tr>
+			<td><div align='center'><strong>序号</strong></div></td>
+			<td><div align='center'><strong>角色名称</strong></div></td>
+			<td><div align='center'><strong>开启状态</strong></div></td>
+			<td><div align='center'><strong>操作</strong></div></td>
+		<tr>
+	
+		<volist name='list' id='vo' >
+		<tr>
+		
+		
+			<td><div align=center>{$vo.id}</div></td>
+			<td><div align=center>{$vo.name}</div></td>
+			<td><div align=center>
+			
+			<if condition="$vo.status">开启<else/>关闭</if>
+			</div></td>
+			
+			
+			<td><div align=center><a href="{:U('Role/setRole',array('rid'=>$vo['id']))}">配置权限</a></div></td>
+		
+		</tr>
+	
+	
+		</volist>
+	
+	
+	</table>
+	
+</body>
+
+</html>
+   
+ 

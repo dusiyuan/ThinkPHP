@@ -1,0 +1,25 @@
+﻿修改文章
+<br><br>
+
+<div class="content">
+
+
+
+<volist name="list" id="vo">
+{$vo.id}&nbsp&nbsp
+<a href="{:U('News/newsedit')}?id={$vo.id}">
+{$vo.title}
+</a>
+&nbsp&nbsp&nbsp
+ 
+{$vo.create_time}
+
+
+
+<br><br>
+</volist>
+
+
+
+<br><br>
+</div>

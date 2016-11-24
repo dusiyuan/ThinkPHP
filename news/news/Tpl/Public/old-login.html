@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<meta http-equiv="Expires" content="0"> 
+<title>后台登录</title> 
+<link href="__PUBLIC__/login/css/login.css" type="text/css" rel="stylesheet"> 
+</head> 
+
+<style>
+
+
+
+.login{  width:500px;   
+
+		}
+
+
+</style>
+
+
+
+<body> 
+
+
+
+<div align=center >
+    <div class="message" align='center'>后台登录</div>
+ 
+    
+    <form class='login' method="post" action='__APP__/Public/loginController' >
+		<input name="username" placeholder="用户名" required="" type="text">
+		<hr class="hr15">
+		<input name="password" placeholder="密码" required="" type="password">
+		<hr class="hr15">
+		<input value="登录" style="width:20%;" type="submit">
+		<div align='center'>
+		<hr >
+		<a href="{:U('Public/register')}">注册</a>
+		</div>
+		<hr class="hr20">
+		<!-- 帮助 <a onClick="alert('请联系管理员')">忘记密码</a> -->
+	</form>
+
+	
+</div>
+
+<div class="copyright"  align=center>© 2016 by <a href="http://www.dusiyuan.cc/" target="_blank">dusiyuan</a></div>
+
+
+
+
+
+</body>
+</html>
